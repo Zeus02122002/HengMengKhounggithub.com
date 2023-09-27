@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="photo/logo_popup.png">
+    <title>Angkor Film</title>
+    <script src="https://kit.fontawesome.com/aad838cc5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+              @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Josefin+Sans:ital,wght@0,600;1,500&family=Koulen&family=Patrick+Hand&family=Poppins:wght@400;600;900&family=Rowdies:wght@300&family=Ysabeau:wght@700&display=swap');
+:root{
+--color-en : #cda566;
+--poppin : 'Poppins', sans-serif;
+--font-menu : 'Ysabeau', sans-serif;
+--bg-menu :   linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, #000 100%) left 100% no-repeat , #000 center 100% no-repeat;
+--battambong-font : 'Battambang', cursive;
+--color-bg :   linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, #000 100%) left 100% no-repeat , #000 center 100% no-repeat;
+--color-btn :  rgb(9, 9, 121)  ;
+--border-btn :  10px 100px / 120px 100px  ;
+} 
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+   .info-content{
+    margin: 50px 0px;
+    padding-top: 120px;
+   }
+   .info-content > .info-content-box{
+         margin: auto;
+         height: 360px;
+         
+   }
+   .info-content  > .info-content-box{
+    display: flex;
+      width: 100%;
+      color: white;
+      gap: 14px;
+      height: 100%;
+      max-width: 1024px;
+      flex-wrap: wrap;
+      padding: 0px 10px;
+      margin-bottom: 24px;
+   }
+   .info-content > .info-content-box > h1{
+    width: 100%;
+    text-align: center;
+    animation: test 0.8s infinite;
+    font-weight: bold;
+    font-family: var(--battambong-font);
+    text-transform: uppercase;
+   }
+   @keyframes test {
+      0%{
+            border-top: 3px solid white;
+            transition: all 1.4s ease-in-out;
+      }50%{
+            border-right: 3px solid rgb(176, 0, 0);
+            transition: all 1.4s ease-in-out;
+            color: rgb(176, 0, 0);
+      } 75%{
+            border-bottom: 3px solid rgb(72, 79, 255);
+            transition: all 1.4s ease-in-out;
+            color:rgb(72, 79, 255) ;
+      } 100%{
+            border-left: 3px solid var(--color-en);
+            transition: all 1.4s ease-in-out;
+            color: var(--color-en);
+      }
+}
+.info-content-box > .info-box1 {
+    width: 45%;
+}
+   .info-content-box > .info-box1 >  p:nth-child(odd){
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+   }
+   .info-content-box > .info-box1 >  p:nth-child(even){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+   }
+
+   .info-content-box > .info-box2 {
+     width: 50%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+    }
+    .info-content-box > .info-box2 > p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .info-content-box > .info-box2 > a>img{
+         width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+   
+     @media screen and (max-width : 968px){
+        .info-content {
+            padding-left: 20px;
+        }
+        .info-content > .info-content-box{
+            display: flex;
+            width: 100%;
+            flex-direction: column;     
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        .info-content > .info-content-box > h1{
+            width: 100%;
+            margin: auto;   
+            font-size: 25px;
+            font-weight: normal;   
+            text-transform: uppercase;
+            font-weight: bold;
+            }
+            .info-content > .info-content-box > .info-box1{
+                width: 100%;
+            } .info-box2{
+                width: 100%;
+                display: block;
+            }
+            .info-content-box > .info-box1 >  p:nth-child(odd){
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+   }
+     }
+    </style>
+</head>
+<body>
+              <!-- start header -->
+              <header class="header" >
+                <nav class="navigation" id="c4">
+                      <ul class="logo"><img src="photo/logo (2).png" alt=""></ul>
+                     
+                      <div class="box_menu">
+                            <ul class="pop_menu">
+                                  <span><i class="fa-solid fa-magnifying-glass search" i></i></span>
+                                  <img src="photo/logo_popup.png" alt="">
+                                  <span><i class="fa-solid fa-xmark"></i></span>
+                            </ul>
+                            
+                            <ul class="menu">
+    
+                            </ul>
+                      </div>
+                      <ul class="menu_right">
+                            <li><i class="fa-solid fa-magnifying-glass search"></i></li>
+                            <li class="language">EN</li>
+                      </ul>
+                      <span class="icon_bar"><i class="fa-solid fa-bars"></i></span>
+                </nav>
+                <div class="find">
+                      <aside class="box_input">
+                            <img src="photo/logo_popup.png" alt="">
+                            <i class="fa-solid fa-magnifying-glass search_popup" ></i>
+                            <input type="text" class="input" placeholder="Search in Angkor film ">
+                            <i class="fa-solid fa-xmark xmark"></i>
+                      </aside>
+                      <div class="popular_link">
+                      </div>
+                </div>
+          </header>
+          <!-- End of header style  -->
+            <div class="info-content">
+                    
+                </div>
+          <!-- ============ -->
+          <!-- start footer  -->
+        <footer class="footer">
+            <div class="box_left">
+             <ul>
+                   <li>movie</li>
+                   <li>Now Showing</li>
+                   <li>Coming Soon</li>
+                   <li>Cinemas</li>
+                   <li>News & Activity</li>
+              </ul>
+              <ul>
+                   <li>System Type</li>
+                   <li>Kids</li>
+                   <li>4dx</li>
+                   <li>imax</li>
+                   <li>screen x</li>
+              </ul>
+            </div>
+              
+            <div class="box_right">
+                 <p>movie line<p>
+                 <h1>071-783-434-7</h1>
+                 <aside class="icon_markerting">
+                   <i class="fa-brands fa-facebook-f"></i>
+                   <i class="fa-brands fa-instagram"></i>
+                   <i class="fa-brands fa-line"></i>
+                   <i class="fa-brands fa-telegram"></i>
+             </aside>
+             <aside class="icon_app">
+                     app Download
+                     <i class="fa-brands fa-google-play"></i>   
+                     <i class="fa-brands fa-apple"></i>
+ 
+              </aside>
+              <p>@Copy Right by Phorn Phanna</p>
+            </div>
+         </footer>
+       <!-- end of footer  -->
+</body>
+<script src="jquery-3.7.0.min.js"></script>
+<script src="app.js"></script>
+<script>
+     var arrayCampus = [
+       {
+        'name_campus' : 'Angkor Film AEON MALL PHNOM PEnh',
+        'map' : `#132,Street Samdach Sothearos , Sangkat Tonle Bassac, Phnom Penh(Aeon1)`,
+        'tel' : '092 36 80 90',
+        'img' : 'photo/map1.jpg',
+        'manager' : 'Phorn Phanna',
+        'time' : '09:00 - 21:00',
+        'year' : '2021-2022',
+        'link' : '#',
+        },
+        {
+        'name_campus' : 'Angkor Film AEON SEN SOK',
+        'map' : `Street 1003, Phnom Penh (Aeon Mall Sen Sok)`,
+        'tel' : '071 78 34347 ',
+        'img' : 'photo/map2.jpg',
+        'manager' : 'Chhoern Soriya',
+        'time' : '09:00 - 21:00',
+        'year' : '2020-2021',
+        'link' : '#',
+
+        },
+        {
+        'name_campus' : 'Angkor Film Battambong City ',
+        'map' : `near Preah Monivong High School, 3 Rd No 3, Krong Battambang 02360`,
+        'tel' : '096 496 1404',
+        'img' : 'photo/map3.PNG',
+        'manager' : 'Somleng Phaloitithya',
+        'time' : '09:00 - 21:00',
+        'year' : '2021-2022',
+        'link' : '#',
+        },
+        {
+        'name_campus' : 'Angkor Film SORYA',
+        'map' : `#13-61, Street 63, Sangkat Phsar Thmei 1,
+        Khan Daun Penh Phnom Penh (Sorya Center Point)`,
+        'tel' : '081 666 210',
+        'img' : 'photo/map4.jpg',
+        'manager' : 'Job Somlot',
+        'time' : '09:00 - 21:00',
+        'year' : '2021-2022',
+        'link' : '#',
+        },
+        {
+        'name_campus' : 'Angkor Film SIEM REAP',
+        'map' : `Stung Thmey Village Svay Dongkom District
+         Siem Reap City Siem Reap Province
+          `,
+        'tel' : '092 36 80 90',
+        'img' : 'photo/map5.jpg',
+        'manager' : 'jop jobern',
+        'time' : '09:00 - 21:00',
+        'year' : '2021-2022',
+        'link' : '#',
+        },
+        {
+        'name_campus' : 'Angkor Film BIG C POIPET',
+        'map' : `Kbal Spean 1 Village, Poipet commune, Poipet district, Banteay Meanchey province (Big C Poipet)`,
+        'tel' : '097 687 1049',
+        'img' : 'photo/map6.jpg',
+        'manager' : 'Thy Rotha',
+        'time' : '09:00 - 21:00',
+        'year' : '2021-2022',
+        'link' : '#',
+        },
+        ];
+        let campus = document.querySelector(".info-content");
+       window.addEventListener("DOMContentLoaded" , function(){
+              var newCampus = arrayCampus.map((e)=>{
+                  return `
+                  <div class="info-content-box">
+                        <h1>${e.name_campus}</h1>
+                        <aside class="info-box1">
+                            <p>Manager</p>
+                            <p>${e.manager} (${e.tel})</p>
+                            <p>Address</p>
+                            <p>${e.map}</p>
+                            <p>office hours</p>
+                            <p>${e.time}</p>
+                            <p>Start Open</p>
+                            <p>${e.year}</p> 
+                         </aside>
+                        <aside class="info-box2">
+                           <p>Map</p>
+                    <a href="${e.link}"><img src="${e.img}" alt=""></a>
+                        </aside>
+                    </div>
+                  `;
+              }).join('');
+           campus.innerHTML = newCampus;
+       });
+</script>
+</html>

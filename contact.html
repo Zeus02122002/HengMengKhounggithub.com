@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="photo/logo_popup.png">
+      <title>Angkor Film</title>
+      <script src="https://kit.fontawesome.com/aad838cc5a.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Josefin+Sans:ital,wght@0,600;1,500&family=Koulen&family=Patrick+Hand&family=Poppins:wght@400;600;900&family=Rowdies:wght@300&family=Ysabeau:wght@700&display=swap');
+:root{
+--color-en : #cda566;
+--poppin : 'Poppins', sans-serif;
+--font-menu : 'Ysabeau', sans-serif;
+--bg-menu :   linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, #000 100%) left 100% no-repeat , #000 center 100% no-repeat;
+--battambong-font : 'Battambang', cursive;
+--color-bg :   linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, #000 100%) left 100% no-repeat , #000 center 100% no-repeat;
+--color-shadow :  rgb(9, 9, 121)  ;
+--border-btn :  10px 100px / 120px 100px  ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after , *::before{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+        .box_contact{
+             width: 1104px;
+             display: flex;
+           /* padding-bottom: 120px; */
+           margin: 0 auto;
+           margin-top: 120px;
+           flex-wrap: wrap;
+           margin-bottom: 60px;
+        }
+   .contact_content{
+      width: 37%;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid white;
+      margin-right: 14px;
+   }
+  
+   .contact_content  table tr  td{
+       font-size: 18px;
+       font-weight: bold;
+       font-family: var(--battambong-font);
+       text-transform: uppercase;
+       color: white;
+   }
+   .contact_content table  tr:nth-child(1)  td{
+      font-size: 32px;
+      font-weight: bold;
+      color: var(--color-en);
+      font-family: var(--font-menu);
+      padding: 14px 0px;
+      text-transform: capitalize;
+   }
+   .contact_form{
+      width: 60%;
+   }
+   .contact_form  input , select , textarea{
+      background-color: transparent;
+      border: 1.5px solid white;
+      outline: none;
+      background: transparent;
+      color: white;
+      border-radius: 6px;
+      padding: 14px;
+      font-family: var(--poppin);
+      font-size: 18px;
+   }
+   select option {
+      color: black;
+   }
+   ::placeholder{
+      color: grey;
+      font-size: 18px;
+      font-family: var(--poppin);
+      text-transform: uppercase;
+   }
+   .contact_form input:focus{
+    outline: none;
+      border:1.5px solid dodgerblue;
+   }
+   select:focus{
+      outline: none;
+      border:1.5px solid dodgerblue;
+   }
+   :optional{
+      text-transform: uppercase;
+   }
+   textarea:focus{
+      outline: none;
+      border:1.5px solid dodgerblue;
+   }
+   .contact_form > table tr td {
+       padding: 14px 0px;
+       font-size: 18px;
+       font-family: var(--battambong-font);
+       font-weight: bold;
+       color: white;
+   }
+   .contact_form > table tr td:first-child {
+      text-transform: uppercase;
+   }
+   .contact_form > table tr:first-child td{
+      font-size: 30px;
+   }
+   .contact_form table  tr td:last-child{
+      padding-left: 15px;
+   }
+   .contact_form table tr td:first-child::after{
+      content: "*";
+      margin-left: 4px;
+      font-size: 23px;
+      color: red;
+   }
+   br{
+      display: none;
+   }
+   @media screen and (max-width : 1104px){
+      .box_contact{
+            flex-direction: column;
+            padding: 0px 20px;
+      }
+      .box_contact .contact_content{
+       border: none;
+      }
+      .box_contact table {
+            padding-left:6px;
+      }
+     
+      .box_contact .contact_content , .contact_form{
+      width: 100%;
+      }
+      .box_contact .contact_content{
+            width: 70%;
+      }
+      .box_contact .contact_form{
+            width: 65%;
+            margin-top: 30px;
+      }
+    
+      
+      .contact_form select {
+      color: white;
+      padding: 4px;
+      font-size: 14px;
+   }
+      br{
+            display: block;
+      }
+      .box_contact .contact_form table tr:nth-child(2) td {
+            width: 100%;
+      }
+      .box_contact table tr td{
+            font-size: 18px;
+      }
+   }
+   @media screen and (max-width : 768px){
+      .box_contact table {
+            padding-left:6px;
+      }
+      .box_contact .contact_content , .contact_form{
+            width: 70%;
+      }
+     .box_contact .contact_content{
+      width:40%;
+     }
+      .box_contact .contact_form{
+            width: 46%;
+      }
+      .box_contact table tr td{
+            font-size: 12px;
+      }
+   }
+
+ 
+      </style>
+</head>
+<body>
+       <!-- start header -->
+       <header class="header" >
+        <nav class="navigation" id="c4">
+              <ul class="logo"><img src="photo/logo (2).png" alt=""></ul>
+             
+              <div class="box_menu">
+                    <ul class="pop_menu">
+                          <span><i class="fa-solid fa-magnifying-glass search" i></i></span>
+                          <img src="photo/logo_popup.png" alt="">
+                          <span><a href=""><i class="fa-solid fa-xmark"></i></a></span>
+                    </ul>
+                    
+                    <ul class="menu">
+
+                    </ul>
+              </div>
+              <ul class="menu_right">
+                    <li><i class="fa-solid fa-magnifying-glass search"></i></li>
+                    <li class="language">EN</li>
+              </ul>
+              <span class="icon_bar"><i class="fa-solid fa-bars"></i></span>
+        </nav>
+        <div class="find">
+              <aside class="box_input">
+                    <img src="photo/logo_popup.png" alt="">
+                    <i class="fa-solid fa-magnifying-glass search_popup" ></i>
+                    <input type="text" class="input" placeholder="Search in Angkor film ">
+                    <i class="fa-solid fa-xmark xmark"></i>
+              </aside>
+              <div class="popular_link">
+                   
+              </div>
+        </div>
+  </header>
+       <!-- End of header style  -->
+       <div class="box_contact">
+        <div class="contact_content">
+       
+        </div>
+      <form class="contact_form">
+               <table>
+                    <tr>
+                        <td colspan="2">contact us</td>
+                    </tr>
+                    <tr>
+                        <td>your name</td>
+                        <td>
+                              <input type="text" placeholder="first name(English Only)" ><br><br>
+                              <input type="text" placeholder="Last name(English Only)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="text" placeholder="E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td>telephone</td>
+                        <td><input type="text" placeholder="phone number"></td>
+                    </tr>
+                    <tr>
+                        <td>topic</td>
+                        <td>
+                              <select name="" id="">
+                                    <option value="" hidden>please select a topic</option>
+                                    <option value="">co-partner</option>
+                                    <option value="">adv/sponser/group booking</option>
+                                    <option value="">event public relation</option>
+                                    <option value="">Feed Back / comment</option>
+                                    <option value="">apply for job</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>massage</td>
+                        <td>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                        </td>
+                    </tr>
+                    
+               </table>                        
+      </form>
+        </div>
+      <!-- start footer  -->
+      <footer class="footer">
+        <div class="box_left">
+         <ul>
+               <li>movie</li>
+               <li>Now Showing</li>
+               <li>Coming Soon</li>
+               <li>Cinemas</li>
+               <li>News & Activity</li>
+          </ul>
+          <ul>
+               <li>System Type</li>
+               <li>Kids</li>
+               <li>4dx</li>
+               <li>imax</li>
+               <li>screen x</li>
+          </ul>
+          
+        </div>
+          
+        <div class="box_right">
+             <p>movie line<p>
+             <h1>071-783-434-7</h1>
+             <aside class="icon_markerting">
+               <i class="fa-brands fa-facebook-f"></i>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-line"></i>
+               <i class="fa-brands fa-telegram"></i>
+         </aside>
+         <aside class="icon_app">
+                 app Download
+                 <i class="fa-brands fa-google-play"></i>   
+                 <i class="fa-brands fa-apple"></i>
+
+          </aside>
+          <p>@Copy Right by Phorn Phanna</p>
+        </div>
+     </footer>
+   <!-- end of footer  -->
+</body>
+<script src="jquery-3.7.0.min.js"></script>
+<script src="app.js"></script>
+ <script>
+       let listContent =
+        [
+     {
+     'p1' : 'business development' , 'p2' : 'opening' ,
+     'p3' : 'working hours' , 'p4':'telephone' , 'p5' : '071 783 4347' ,
+     'p6' : 'e-mail' , 'p7' : ' Sale@Angkorfilm.com.kh',
+      },
+      {
+     'p1' : 'markerting' , 'p2' : 'opening' ,
+     'p3' : 'working hours' , 'p4':'telephone' , 'p5' : '092 368 090' ,
+     'p6' : 'e-mail' , 'p7' : 'Digital@Angkorfilm.com.kh',
+      },
+
+       ];
+        let contactContent = document.querySelector(".contact_content");
+        let contactForm = document.querySelector(".contact_form");
+        
+       let showingContent = ()=>{
+      let newListContent = listContent.map((e)=>{
+               return `
+               <table>
+                  <tr>
+                        <td colspan="2">${e.p1}</td>
+                  </tr>
+                  <tr>
+                        <td>${e.p2}</td>
+                        <td>:&nbsp; &nbsp; ${e.p3}</td>
+                  </tr>
+                  <tr>
+                        <td>${e.p4}</td>
+                        <td>:&nbsp; &nbsp; ${e.p5}</td>
+                  </tr>
+                  <tr>
+                        <td>${e.p6}</td>
+                        <td>:&nbsp; &nbsp; ${e.p7}</td>
+                  </tr>
+            </table>
+               `;
+      }).join('');
+      contactContent.innerHTML = newListContent; 
+       };
+    window.addEventListener("DOMContentLoaded" , function(){
+      showingContent();
+    });
+
+       
+ </script>
+</html>
